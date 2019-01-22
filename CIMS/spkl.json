@@ -1,0 +1,123 @@
+{
+  "webresources": [
+    {
+      "profile": "default,debug",
+      "root": "Webresources/",
+      "solution": null,
+      "files": [
+        {
+          "uniquename": "new_/js/somefile.js",
+          "file": "new_\\js\\somefile.js",
+          "description": "",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_Btn_Lead_Qualify.js",
+          "file": "/Webresource/Btn_Lead_Qualify.js",
+          "description": "To Qualify Lead and Create a Contact.",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_Lead_Function.js",
+          "file": "/Webresource/Lead_Function.js",
+          "description": null,
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_Interviewer_Function.js",
+          "file": "/Webresource/Interviewer_Function.js",
+          "description": null,
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_AssessmentGuidelines.html",
+          "file": "/Webresource/AssessmentGuidelines_LeftSide.html",
+          "description": "AssessmentGuidelines.html",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_AssessmentGuidelines_LeftSide.html",
+          "file": "/Webresource/AssessmentGuidelines_LeftSide.html",
+          "description": "AssessmentGuidelines_LeftSide.html",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_AssessmentGuidelines_RightSide.html",
+          "file": "/Webresource/AssessmentGuidelines_RightSide.html",
+          "description": "AssessmentGuidelines_RightSide.html",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_Style.css",
+          "file": "/Webresource/Style.css",
+          "description": "Style.css",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_Assessment.js",
+          "file": "/Webresource/Assessment.js",
+          "description": "Assessment.js",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_Helper.js",
+          "file": "/Webresource/Helper.js",
+          "description": "Helper.js",
+          "ts": null
+        },
+        {
+          "uniquename": "dxc_ActivityTabs_Visibility.js",
+          "file": "/Webresource/ActivityTabs_Visibility.js",
+          "description": "ActivityTabs_Visibility.js",
+          "ts": null
+        }
+      ]
+    }
+  ],
+  "plugins": [
+    {
+      "profile": "default,debug",
+      "assemblypath": "bin\\Debug",
+      "classRegex": null
+    }
+  ],
+  "earlyboundtypes": [
+    {
+      "entities": "account,contact,quote",
+      "actions": "dev1_simpleaction",
+      "generateOptionsetEnums": true,
+      "generateGlobalOptionsets": false,
+      "generateStateEnums": true,
+      "filename": "EarlyBoundTypes.cs",
+      "classNamespace": "CIMS",
+      "serviceContextName": "XrmSvc"
+    }
+  ],
+  "solutions": [
+    {
+      "profile": "default,debug",
+      "solution_uniquename": "spkltestsolution",
+      "packagepath": "package",
+      "solutionpath": "solution_{0}_{1}_{2}_{3}.zip",
+      "packagetype": "unmanaged",
+      "increment_on_import": false,
+      "map": [
+        {
+          "map": "path",
+          "from": "PluginAssemblies\\**\\*.*",
+          "to": "..\\..\\Plugins\\bin\\**"
+        },
+        {
+          "map": "path",
+          "from": "WebResources\\*.*",
+          "to": "..\\..\\Webresources\\Webresources\\**"
+        },
+        {
+          "map": "path",
+          "from": "WebResources\\**\\*.*",
+          "to": "..\\..\\Webresources\\Webresources\\**"
+        }
+      ]
+    }
+  ]
+}

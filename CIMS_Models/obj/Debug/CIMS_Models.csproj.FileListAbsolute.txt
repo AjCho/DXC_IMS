@@ -1,0 +1,12 @@
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\CIMS_Models.dll
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\CIMS_Models.pdb
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\AJ\Projects\CIMS\CIMS_Models\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.csproj.CoreCompileInputs.cache
+C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.csproj.CopyComplete
+C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.dll
+C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.pdb

@@ -1,0 +1,4 @@
+// Run This in Command Prompt >>> cd C:\AJ\Projects\sdk\CoreTools 
+
+CrmSvcUtil.exe /url:https://dxcims.api.crm5.dynamics.com/XRMServices/2011/Organization.svc    /out:Entities.cs /username:admin@dxcims.onmicrosoft.com /password:pass@word1     /namespace:CIMS_CustomWorkflow.Model 
+

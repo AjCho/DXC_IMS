@@ -1,0 +1,4 @@
+C:\AJ\Projects\CIMS\CIMS\obj\Debug\CIMS.csprojAssemblyReference.cache
+C:\AJ\Projects\CIMS\CIMS\obj\Debug\CIMS.csproj.CoreCompileInputs.cache
+C:\AJ\Projects\CIMS\CIMS\obj\Debug\CIMS.dll
+C:\AJ\Projects\CIMS\CIMS\obj\Debug\CIMS.pdb

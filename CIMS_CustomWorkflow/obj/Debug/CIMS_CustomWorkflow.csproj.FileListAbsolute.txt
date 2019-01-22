@@ -1,0 +1,4 @@
+C:\AJ\Projects\CIMS\CIMS_CustomWorkflow\obj\Debug\CIMS_CustomWorkflow.csproj.CoreCompileInputs.cache
+C:\AJ\Projects\CIMS\CIMS_CustomWorkflow\obj\Debug\CIMS_CustomWorkflow.dll
+C:\AJ\Projects\CIMS\CIMS_CustomWorkflow\obj\Debug\CIMS_CustomWorkflow.pdb
+C:\AJ\Projects\CIMS\CIMS_CustomWorkflow\obj\Debug\CIMS_CustomWorkflow.csprojAssemblyReference.cache
