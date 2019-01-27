@@ -77,6 +77,7 @@
   <ItemGroup>
     <None Include="BackUp Solution\DXC_IMS_1_0_0_0.zip" />
     <None Include="File Upload\Assesment Manager.xlsx" />
+    <None Include="File Upload\Technical Questions Manager 1-25-2019 3-04-47 AM.xlsx" />
     <None Include="ILMerge.props" />
     <None Include="MS Flows\Copy Notes From Lead to Contact.json" />
     <None Include="MS Flows\CopyNotesFromLeadtoContact_20190111094402.zip" />

@@ -12,3 +12,4 @@ C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\obj\Debug\CIMS_CW001_Cand
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\obj\Debug\CIMS_CW001_Candidate.csproj.CopyComplete
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\obj\Debug\CIMS_CW_Candidate_AddAnInterviewer.dll
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\obj\Debug\CIMS_CW_Candidate_AddAnInterviewer.pdb
+C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\obj\Debug\CIMS_CW001_Candidate.csprojAssemblyReference.cache

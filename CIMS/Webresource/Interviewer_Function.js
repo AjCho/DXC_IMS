@@ -22,8 +22,6 @@ function AssessmentSectionVisibility(executionContext) {
         HideTab(executionContext, Assessment);
         HideTab(executionContext, CandidateStatus);
     }
-
-
 }
 
 function HideTab(executionContext, tabName) {

@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CIMS",
+    "\\CIMS\\Webresource",
+    "\\CIMS_CustomWorkflow",
+    "\\CIMS_CustomWorkflow\\Business Logic",
+    "\\CIMS_CustomWorkflow\\Custom Worflow Plugins",
+    "\\CIMS_CW_Candidate_AddAnInterviewer",
+    "\\CIMS_CW_Candidate_AddAnInterviewer\\BusinessLogic"
+  ],
+  "SelectedNode": "\\CIMS.sln",
+  "PreviewInSolutionExplorer": false
+}

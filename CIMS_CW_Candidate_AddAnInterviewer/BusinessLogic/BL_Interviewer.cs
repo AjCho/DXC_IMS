@@ -18,6 +18,7 @@ namespace CIMS_CW001_Candidate.Business_Logic
         protected const string dxc_candidate = "dxc_candidate";
         protected const string dxc_interviewer = "dxc_interviewer";
         protected const string dxc_name = "dxc_name";
+        protected const string dxc_type = "dxc_type";
         protected const string dxc_systemuser_dxc_interviewer_InterviewerName = "dxc_systemuser_dxc_interviewer_InterviewerName";
         protected const string dxc_contact_dxc_interviewer_Candidate = "dxc_contact_dxc_interviewer_Candidate";
 
@@ -29,6 +30,8 @@ namespace CIMS_CW001_Candidate.Business_Logic
                 newInterviewer[dxc_name] = name;
                 newInterviewer[dxc_interviewername] = new EntityReference(systemuser, systemuserID);
                 newInterviewer[dxc_candidate] = new EntityReference(contact, candidateID);
+                // 1 = initial interview
+                newInterviewer[dxc_type] = new OptionSetValue(1);
 
                 service.Create(newInterviewer);
                 tracer.Trace(help.SuccessfulTraceMsg("CreateInterviewer, " + name));
