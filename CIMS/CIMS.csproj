@@ -76,6 +76,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BackUp Solution\DXC_IMS_1_0_0_0.zip" />
+    <None Include="BackUp Solution\DXC_IMS_1_0_0_1.zip" />
+    <None Include="BackUp Solution\DXC_IMS_1_0_0_2_01292019.zip" />
     <None Include="File Upload\Assesment Manager.xlsx" />
     <None Include="File Upload\Technical Questions Manager 1-25-2019 3-04-47 AM.xlsx" />
     <None Include="ILMerge.props" />
