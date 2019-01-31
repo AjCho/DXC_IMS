@@ -77,9 +77,10 @@
   <ItemGroup>
     <None Include="BackUp Solution\DXC_IMS_1_0_0_0.zip" />
     <None Include="BackUp Solution\DXC_IMS_1_0_0_1.zip" />
+    <None Include="BackUp Solution\DXC_IMS_1_0_0_2.zip" />
     <None Include="BackUp Solution\DXC_IMS_1_0_0_2_01292019.zip" />
     <None Include="File Upload\Assesment Manager.xlsx" />
-    <None Include="File Upload\Technical Questions Manager 1-25-2019 3-04-47 AM.xlsx" />
+    <None Include="File Upload\Technical Questions Manager 1-31-2019 1-01-17 PM.xlsx" />
     <None Include="ILMerge.props" />
     <None Include="MS Flows\Copy Notes From Lead to Contact.json" />
     <None Include="MS Flows\CopyNotesFromLeadtoContact_20190111094402.zip" />
@@ -88,12 +89,16 @@
     <None Include="spkl.json" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BakUp SiteMaps\SiteMap - IMS 30-Jan-2018.xml" />
+    <Content Include="BakUp SiteMaps\SiteMap - IMS 31-Jan-2018.xml" />
     <Content Include="ILMergeOrder.txt" />
     <Content Include="Webresource\ActivityTabs_Visibility.js" />
     <Content Include="Webresource\Assessment.js" />
     <Content Include="Webresource\AssessmentGuidelines_RightSide.html" />
     <Content Include="Webresource\AssessmentGuidelines_LeftSide.html" />
     <Content Include="Webresource\Btn_Lead_Qualify.js" />
+    <Content Include="Webresource\ConditionalChevronTabs.js" />
+    <Content Include="Webresource\DynamicTabs.html" />
     <Content Include="Webresource\Helper.js" />
     <Content Include="Webresource\Interviewer_Function.js" />
     <Content Include="Webresource\Lead_Function.js" />

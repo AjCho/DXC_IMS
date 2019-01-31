@@ -1,0 +1,149 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--
+    "This web resource is dynamically creating a menu tab depending on the created tabs in a form. When clicked, the
+        desired tab(s) will show and the non related tabs will hide."
+
+        Instructions for using this web resource:
+            Step 1: Add this web resource to the desired form and to the Header section
+                    of the page in MS Dynamics CRM.
+            Step 2: Create the desired tab in the form, make sure that the name and label are properly filled in.
+        Note: The 1st hierarchy in the tabs will be the active tab upon loading the page.
+            Step 3 (Optional): To create a child tab, make sure to associate it with the parent tab by naming
+                               the tab in a following format, parent name then "_" and finally the child's name.
+                               eg. parentTabName_childTabName after naming it, fill in the label.
+    -- Created by: AJ-->
+
+    <style>
+        #accountTabs {
+            border-bottom: 3px solid #000000;
+        }
+
+            #accountTabs li {
+                margin-bottom: 0px;
+            }
+
+                #accountTabs li a {
+                    background: #eeeeee;
+                    margin-right: 1px !important;
+                    border: none !important;
+                    padding: 10px 11px;
+                }
+
+                #accountTabs li.active a {
+                    background: #000000;
+                    color: #ffffff;
+                }
+
+        .aclass {
+            color: #000000;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        var tabNames = [];
+        function InitializeTabs() {
+            var rawTabs = parent.Xrm.Page.ui.tabs.get();
+            for (var i in rawTabs) {
+                var tab = rawTabs[i];
+                var tabName = tab.getName();
+                tabNames.push(tabName);
+                // Creating the elements
+                if (i == 0) {
+                    $("#accountTabs").append("<li class='active'>"
+                    + "<a id='" + tabName + "Link' class='aclass' onclick='ShowHideTab(\"" + tabName + "\")' "
+                    + "data-toggle='tab' href='#" + tabName + "'>" + tabName + "</a></li>");
+                } else {
+                    var comparer = tabName.indexOf(delimiter) !== -1;
+                    if (!comparer) {
+                        $("#accountTabs").append("<li>"
+                        + "<a id='" + tabName + "Link' class='aclass' onclick='ShowHideTab(\"" + tabName + "\")' "
+                        + "data-toggle='tab' href='#" + tabName + "'>" + tabName + "</a></li>");
+                    }
+                }
+            }
+
+        }
+
+        // Onload
+        $(document).ready(function () {
+            InitializeTabs();
+        });
+
+        function Contains(string, substring) {
+            var comparer = string.indexOf(substring) !== -1;
+            if (comparer) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        //SHOW HIDE SECTION
+        var delimiter = "_";
+        var isOverview = false;
+
+        function OnloadOfPage() {
+            // First tab should be visible at first load.
+            var tabName = tabNames[0];
+            parent.Xrm.Page.ui.tabs.get(tabName, "collapsed", false).setVisible(true);
+            for (var i in tabNames) {
+                var comparer = tabNames[i].indexOf(delimiter) !== -1;
+                if (comparer) {
+                    var value = tabNames[i].split(delimiter)
+                    if (tabName == value[0]) {
+                        parent.Xrm.Page.ui.tabs.get(tabNames[i], "collapsed", false).setVisible(true);
+                    } else {
+                        parent.Xrm.Page.ui.tabs.get(tabNames[i], "collapsed", false).setVisible(false);
+                    }
+                } else {
+                    if (tabName != tabNames[i]) {
+                        parent.Xrm.Page.ui.tabs.get(tabNames[i], "collapsed", false).setVisible(false);
+
+                    }
+                }
+            }
+        }
+
+        function ShowHideTab(tabName) {
+            for (var i in tabNames) {
+                if (tabName == tabNames[i]) {
+                    parent.Xrm.Page.ui.tabs.get(tabName, "collapsed", false).setVisible(true);
+
+                } else {
+                    // This will check if the tab name is a parent or a child tab.
+                    var comparer = tabNames[i].indexOf(delimiter) !== -1;
+                    if (comparer) {
+                        var value = tabNames[i].split(delimiter)
+                        // This will check if the parent tab is matched in the child tab.
+                        if (tabName == value[0]) {
+                            parent.Xrm.Page.ui.tabs.get(tabNames[i], "collapsed", false).setVisible(true);
+                        } else {
+                            parent.Xrm.Page.ui.tabs.get(tabNames[i], "collapsed", false).setVisible(false);
+                        }
+                    } else {
+                        if (tabName != tabNames[i]) {
+                            parent.Xrm.Page.ui.tabs.get(tabNames[i], "collapsed", false).setVisible(false);
+
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    </script>
+    <meta>
+</head>
+<body style="word-wrap: break-word;" onload="OnloadOfPage();">
+    <ul id="accountTabs" class="nav nav-tabs"></ul>
+
+</body>
+</html>

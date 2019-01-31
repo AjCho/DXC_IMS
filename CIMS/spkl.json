@@ -70,6 +70,12 @@
           "file": "/Webresource/ActivityTabs_Visibility.js",
           "description": "ActivityTabs_Visibility.js",
           "ts": null
+        },
+        {
+          "uniquename": "dxc_DynamicTabs.html",
+          "file": "/Webresource/DynamicTabs.html",
+          "description": "DynamicTabs.html",
+          "ts": null
         }
       ]
     }
