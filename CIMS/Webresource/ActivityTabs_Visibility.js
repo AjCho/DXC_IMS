@@ -6,7 +6,7 @@
 ///     Created/Upgraded by: AJ Cho, 01/30/2019      ///
 
 function HideActivities() {
-    var tabs = ["ASSISTANT", "POSTS", "ONENOTE"];
+    var tabs = ["ASSISTANT", "POSTS", "ACTIVITIES", "ONENOTE"];
     for (var tabsid = 0; tabsid < tabs.length; tabsid++) {
         HideTabs(tabs[tabsid]);
     }

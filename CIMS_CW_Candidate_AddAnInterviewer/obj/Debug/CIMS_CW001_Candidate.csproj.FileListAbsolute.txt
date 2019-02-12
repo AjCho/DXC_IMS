@@ -1,5 +1,7 @@
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\bin\Debug\CIMS_CW_Candidate_AddAnInterviewer.dll
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\bin\Debug\CIMS_CW_Candidate_AddAnInterviewer.pdb
+C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\bin\Debug\CIMS_CW_Candidate_AddAnInterviewer.dll.CodeAnalysisLog.xml
+C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\bin\Debug\CIMS_CW_Candidate_AddAnInterviewer.dll.lastcodeanalysissucceeded
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\bin\Debug\CIMS_Models.dll
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
 C:\AJ\Projects\CIMS\CIMS_CW_Candidate_AddAnInterviewer\bin\Debug\Microsoft.Xrm.Sdk.dll

@@ -1,3 +1,5 @@
+C:\AJ\Projects\CIMS\CIMS\bin\Debug\CIMS.dll.CodeAnalysisLog.xml
+C:\AJ\Projects\CIMS\CIMS\bin\Debug\CIMS.dll.lastcodeanalysissucceeded
 C:\AJ\Projects\CIMS\CIMS\obj\Debug\CIMS.csproj.CoreCompileInputs.cache
 C:\AJ\Projects\CIMS\CIMS\obj\Debug\CIMS.dll
 C:\AJ\Projects\CIMS\CIMS\obj\Debug\CIMS.pdb

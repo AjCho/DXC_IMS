@@ -76,6 +76,12 @@
           "file": "/Webresource/DynamicTabs.html",
           "description": "DynamicTabs.html",
           "ts": null
+        },
+        {
+          "uniquename": "dxc_ViewAttachedNotes.js",
+          "file": "/Webresource/ViewAttachedNotes.js",
+          "description": "ViewAttachedNotes.js",
+          "ts": null
         }
       ]
     }

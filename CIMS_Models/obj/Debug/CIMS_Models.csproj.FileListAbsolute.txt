@@ -10,3 +10,4 @@ C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.csproj.CoreCompileInputs.c
 C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.csproj.CopyComplete
 C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.dll
 C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.pdb
+C:\AJ\Projects\CIMS\CIMS_Models\obj\Debug\CIMS_Models.csprojAssemblyReference.cache

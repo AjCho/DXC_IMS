@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIMS", "CIMS\CIMS.csproj", "{390B3AEE-CC7A-4EEB-B9B6-D0F7DC95C453}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIMS_CustomWorkflow", "CIMS_CustomWorkflow\CIMS_CustomWorkflow.csproj", "{0BC99C5A-1EDA-460A-95E9-AF94F31DBA81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIMS_CW002_Assessment", "CIMS_CustomWorkflow\CIMS_CW002_Assessment.csproj", "{0BC99C5A-1EDA-460A-95E9-AF94F31DBA81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIMS_CW001_Candidate", "CIMS_CW_Candidate_AddAnInterviewer\CIMS_CW001_Candidate.csproj", "{CBC1D7A3-1F23-436B-9F5B-1B298EC816B6}"
 EndProject
