@@ -1,54 +1,28 @@
-﻿using CIMS_CustomWorkflow.Model;
-using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Query;
+﻿using Microsoft.Xrm.Sdk;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CIMS_CustomWorkflow.Model;
+using Microsoft.Xrm.Sdk.Query;
 
 namespace CIMS_CustomWorkflow.Business_Logic
 {
     class BL_Systemuser
     {
-        // Variables
-        protected const string systemuser = "systemuser";
-        public const string systemuserid = "systemuserid";
-        protected const string dxc_businessarea = "dxc_businessarea";
-        protected const string dxc_interviewertype = "dxc_interviewertype";
-        
-        //protected const string
-        public EntityCollection GetSystemusersViaBusinessArea(ITracingService tracer, IOrganizationService service, int businessArea, int interviewerType)
+        public EntityCollection GetAssesmentUser(ITracingService tracer, IOrganizationService service, Guid systemuserid)
         {
-            try
-            {
-                EntityCollection ec_SystemUser = null;
-                SystemUser systemusers = new SystemUser();
-                
-                QueryExpression query = new QueryExpression() { };
-
-                query.EntityName = systemusers.LogicalName;
-                query.ColumnSet = new ColumnSet(dxc_businessarea, dxc_interviewertype);
-                query.Criteria = new FilterExpression();
-                query.Criteria.AddCondition(dxc_businessarea, ConditionOperator.Equal, businessArea);
-                query.Criteria.AddCondition(dxc_interviewertype, ConditionOperator.Equal, interviewerType);
-
-                ec_SystemUser = service.RetrieveMultiple(query);
-                return ec_SystemUser;
-            }
-            catch (Exception e)
-            {
-                tracer.Trace("e.Message");
-                throw new InvalidPluginExecutionException(e.Message);
-            }
-
+            string fetchXML = @"<fetch version='1.0' output-format='xml - platform' mapping='logical' distinct='false' >
+                                <entity name = 'systemuser' >
+                                    <attribute name = 'fullname' />
+                                    <attribute name = 'businessunitid' />
+                                    <attribute name = 'dxc_businessareas' />
+                                    <attribute name = 'systemuserid' />
+                                    <order attribute = 'fullname' descending = 'false' />
+                                        <filter type = 'and' >
+                                            <condition attribute = 'systemuserid' operator= 'eq' " + @" uitype = 'systemuser' value = '{" + systemuserid + @"}' />
+                                        </filter >
+                                 </entity >
+                               </fetch > ";
+            // < condition attribute = 'systemuserid' operator= 'eq' uiname = 'Aidonnel Cho' uitype = 'systemuser' value = '{B60F3950-E147-4F5A-AA5A-CD7F620052E4}' />
+            return service.RetrieveMultiple(new FetchExpression(fetchXML));
         }
-
-
-
-
-
-
-
     }
 }

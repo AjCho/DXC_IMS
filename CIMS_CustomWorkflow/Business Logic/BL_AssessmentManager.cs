@@ -33,22 +33,23 @@ namespace CIMS_CustomWorkflow.Business_Logic
             }
         }
 
-        public EntityCollection GetAssessmentManagersViaBusArea(ITracingService tracer, IOrganizationService service)
+        public EntityCollection GetAssessmentManagersViaBusArea(ITracingService tracer, IOrganizationService service, Guid id)
         {
             string fetchXML = @"<fetch version='1.0' output-format='xml - platform' mapping='logical' distinct='false'>
                                 <entity name = 'dxc_assesmentmanager' >
                                     <attribute name = 'dxc_assesmentmanagerid' />
                                     <attribute name = 'dxc_name' />
-                                    <attribute name = 'createdon' />
+                                    <attribute name = 'dxc_businessarea' />
+                                    <attribute name = 'dxc_criteriatype' />
                                     <order attribute = 'dxc_name' descending = 'false' />
                                     <filter type = 'and' >
                                         <filter type = 'or' >
                                             <condition attribute = 'dxc_businessarea' operator = 'null' />
-                                            <condition attribute = 'dxc_businessarea' operator = 'eq' uiname = 'CRM - Functional' uitype = 'dxc_businessarea' value = '{9B461AB3-CB2D-E911-A991-000D3AA2C8D1}' />
+                                            <condition attribute = 'dxc_businessarea' operator = 'eq' uitype = 'dxc_businessarea' value = '{" + id + @"}' />
                                         </filter>
                                     </filter>
                                 </entity>
-                               </fetch> ";
+                               </fetch>";
             return service.RetrieveMultiple(new FetchExpression(fetchXML));
         }
 

@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="Business Logic\BL_AssessmentManager.cs" />
     <Compile Include="AddAnAssessment.cs" />
+    <Compile Include="Business Logic\BL_Systemuser.cs" />
     <Compile Include="Helper\Helper.cs" />
     <Compile Include="Model\Entities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
